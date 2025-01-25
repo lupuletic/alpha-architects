@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaArchitects - Arhitectură și Design Interior în Timișoara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7rlqU11QupWsdmq1fxJJ5BlDbrFxKK.png" alt="AlphaArchitects Logo" class="h-12">
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="nav-link">Acasă</a>
+                <a href="despre.html" class="nav-link">Despre Noi</a>
+                <a href="servicii.html" class="nav-link">Servicii</a>
+                <a href="portofoliu.html" class="nav-link">Portofoliu</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="md:hidden" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-text hover:bg-gray-100">Acasă</a>
+            <a href="despre.html" class="block px-4 py-2 text-text hover:bg-gray-100">Despre Noi</a>
+            <a href="servicii.html" class="block px-4 py-2 text-text hover:bg-gray-100">Servicii</a>
+            <a href="portofoliu.html" class="block px-4 py-2 text-text hover:bg-gray-100">Portofoliu</a>
+            <a href="contact.html" class="block px-4 py-2 text-text hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="hero-section text-white py-32 px-4">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Transformăm Viziunea în Realitate</h1>
+                <p class="text-xl md:text-2xl mb-8">Arhitectură și Design Interior de Excepție în Timișoara</p>
+                <a href="contact.html" class="btn-primary">Contactează-ne</a>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="section-title text-center">Serviciile Noastre</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card">
+                        <h3 class="text-xl font-bold mb-4">Design Arhitectural</h3>
+                        <p>Creăm spații care îmbină funcționalitatea cu estetica, adaptate nevoilor și viziunii dumneavoastră.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold mb-4">Design Interior</h3>
+                        <p>Transformăm spațiile interioare în medii care inspiră și încântă, păstrând un echilibru perfect între formă și funcție.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold mb-4">Consultanță</h3>
+                        <p>Oferim expertiză și îndrumare în toate etapele proiectului, de la concept până la finalizare.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-4">
+            <div class="container mx-auto">
+                <h2 class="section-title text-center">Proiecte Recente</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proiect 1" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proiect 2" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Proiect 3" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="portofoliu.html" class="btn-primary">Vezi Portofoliul Complet</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">AlphaArchitects</h3>
+                    <p>Excelență în arhitectură și design interior în Timișoara și împrejurimi.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p>Timișoara, România</p>
+                    <p>Email: contact@alphaarchitects.ro</p>
+                    <p>Tel: +40 XXX XXX XXX</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Program</h3>
+                    <p>Luni - Vineri: 09:00 - 18:00</p>
+                    <p>Sâmbătă: 10:00 - 14:00</p>
+                    <p>Duminică: Închis</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-600 text-center">
+                <p>&copy; 2024 AlphaArchitects. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+

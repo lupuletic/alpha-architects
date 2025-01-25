@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AlphaArchitects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header same as index.html -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <!-- Navigation content same as index.html -->
+    </header>
+
+    <main class="flex-grow py-16 px-4">
+        <div class="container mx-auto">
+            <h1 class="section-title text-center">Contactează-ne</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="card">
+                    <h2 class="text-2xl font-bold mb-6">Trimite-ne un mesaj</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nume complet</label>
+                            <input type="text" id="name" name="name" required 
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Telefon</label>
+                            <input type="tel" id="phone" name="phone" 
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Mesaj</label>
+                            <textarea id="message" name="message" rows="4" required 
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Trimite mesajul</button>
+                    </form>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="card">
+                        <h2 class="text-2xl font-bold mb-6">Informații de Contact</h2>
+                        <div class="space-y-4">
+                            <p><strong>Adresă:</strong> Timișoara, România</p>
+                            <p><strong>Email:</strong> contact@alphaarchitects.ro</p>
+                            <p><strong>Telefon:</strong> +40 XXX XXX XXX</p>
+                            <p><strong>Program:</strong></p>
+                            <ul class="list-none space-y-2">
+                                <li>Luni - Vineri: 09:00 - 18:00</li>
+                                <li>Sâmbătă: 10:00 - 14:00</li>
+                                <li>Duminică: Închis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h2 class="text-2xl font-bold mb-6">Locație</h2>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Hartă locație" class="w-full h-64 object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer same as index.html -->
+    <footer class="bg-secondary text-white py-8">
+        <!-- Footer content same as index.html -->
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+
